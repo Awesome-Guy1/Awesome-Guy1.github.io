@@ -10,6 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: cd ui-module
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
         run: |
